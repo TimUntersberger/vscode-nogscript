@@ -1,0 +1,25 @@
+{
+    "name": "nogscript-language-support",
+    "displayName": "Nogscript Language Support",
+    "description": "The official language support for nogscript",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.52.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "nogscript",
+            "aliases": ["Nogscript", "nogscript"],
+            "extensions": [".ns"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "nogscript",
+            "scopeName": "source.ns",
+            "path": "./syntaxes/nogscript.tmLanguage.json"
+        }]
+    }
+}
